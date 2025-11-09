@@ -36,8 +36,7 @@ const Contact = () => {
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6 text-emerald-600">L et'sBuild Together
-            <span className="text-gradient">Build Together</span>
+            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6 text-emerald-600">Let's Build Together<span className="text-gradient">Build Together</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Ready to transform your ideas into reality? Get in touch and let's discuss your project.
@@ -125,7 +124,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold text-lg mb-1">Phone</h3>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                      <p className="text-muted-foreground">+91 93472 34174</p>
                       <p className="text-sm text-muted-foreground">Mon-Fri 
 9am-6pm IST</p>
                     </div>
