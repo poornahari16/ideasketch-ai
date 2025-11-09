@@ -91,8 +91,7 @@ const Index = () => {
         
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-            <h1 className="text-5xl font-heading font-bold leading-tight text-lime-400 md:text-6xl">Transform Your  Ideas into 
- AI-Powered Reality{" "}
+            <h1 className="text-5xl font-heading font-bold leading-tight text-lime-400 md:text-6xl">Transform Your  Ideas into AI-Powered Reality{" "}
               <span className="text-gradient text-5xl font-bold">AI-Powered Reality</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
