@@ -1,24 +1,34 @@
 import { Link } from "react-router-dom";
 import { Mail, Linkedin, Twitter, Instagram } from "lucide-react";
 import logo from "@/assets/ideasketch-logo.jpg";
-
 const Footer = () => {
-  const services = [
-    { name: "AI Video Generation", path: "/services/ai-video" },
-    { name: "AI Chatbots", path: "/services/chatbots" },
-    { name: "AI Automations", path: "/services/automations" },
-    { name: "Custom AI Solutions", path: "/services/custom-ai" },
-  ];
-
-  const company = [
-    { name: "About Us", path: "/about" },
-    { name: "Case Studies", path: "/case-studies" },
-    { name: "Pricing", path: "/pricing" },
-    { name: "Contact", path: "/contact" },
-  ];
-
-  return (
-    <footer className="bg-card border-t border-border">
+  const services = [{
+    name: "AI Video Generation",
+    path: "/services/ai-video"
+  }, {
+    name: "AI Chatbots",
+    path: "/services/chatbots"
+  }, {
+    name: "AI Automations",
+    path: "/services/automations"
+  }, {
+    name: "Custom AI Solutions",
+    path: "/services/custom-ai"
+  }];
+  const company = [{
+    name: "About Us",
+    path: "/about"
+  }, {
+    name: "Case Studies",
+    path: "/case-studies"
+  }, {
+    name: "Pricing",
+    path: "/pricing"
+  }, {
+    name: "Contact",
+    path: "/contact"
+  }];
+  return <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
@@ -45,41 +55,31 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="font-heading font-semibold text-lg mb-4">Services</h3>
+            <h3 className="font-heading font-semibold text-lg mb-4 text-indigo-600">Services</h3>
             <ul className="space-y-3">
-              {services.map((service) => (
-                <li key={service.path}>
-                  <Link
-                    to={service.path}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
+              {services.map(service => <li key={service.path}>
+                  <Link to={service.path} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                     {service.name}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
           {/* Company */}
           <div>
-            <h3 className="font-heading font-semibold text-lg mb-4">Company</h3>
+            <h3 className="font-heading font-semibold text-lg mb-4 text-blue-700">Company</h3>
             <ul className="space-y-3">
-              {company.map((item) => (
-                <li key={item.path}>
-                  <Link
-                    to={item.path}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
+              {company.map(item => <li key={item.path}>
+                  <Link to={item.path} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                     {item.name}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="font-heading font-semibold text-lg mb-4">Get in Touch</h3>
+            <h3 className="font-heading font-semibold text-lg mb-4 text-blue-800">Get in Touch</h3>
             <p className="text-sm text-muted-foreground mb-4">
               Ready to bring your ideas to life? Let's talk.
             </p>
@@ -93,9 +93,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-muted-foreground">
-              © 2024 IdeaSketch.ai. All rights reserved.
-            </p>
+            <p className="text-sm text-muted-foreground">© 2025 IdeaSketch. All rights reserved.</p>
             <div className="flex space-x-6">
               <Link to="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Privacy Policy
@@ -107,8 +105,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

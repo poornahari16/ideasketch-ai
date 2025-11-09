@@ -91,8 +91,8 @@ const Index = () => {
         
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-heading font-bold leading-tight text-lime-400">
-              Transform Ideas into{" "}
+            <h1 className="text-5xl font-heading font-bold leading-tight text-lime-400 md:text-6xl">Transform Your
+ Ideas into AI-Powered Reality{" "}
               <span className="text-gradient text-5xl font-bold">AI-Powered Reality</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
@@ -116,7 +116,7 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-slide-up">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-violet-800">
               What We <span className="text-gradient">Build</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -144,7 +144,7 @@ const Index = () => {
       <section className="py-20 px-4 bg-card/50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-green-600">
               How We <span className="text-gradient">Work</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -159,7 +159,7 @@ const Index = () => {
                 <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-2xl font-bold text-white glow-primary">
                   {item.step}
                 </div>
-                <h3 className="text-2xl font-heading font-bold mb-2">{item.title}</h3>
+                <h3 className="text-2xl font-heading font-bold mb-2 text-green-700">{item.title}</h3>
                 <p className="text-muted-foreground">{item.description}</p>
                 {index < process.length - 1 && <div className="hidden md:block absolute top-10 left-[60%] w-[80%] h-0.5 bg-gradient-to-r from-primary to-transparent" />}
               </div>)}
@@ -171,7 +171,7 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-green-700">
               Trusted by <span className="text-gradient">Innovators</span>
             </h2>
           </div>
@@ -194,7 +194,7 @@ const Index = () => {
       <section className="py-20 px-4 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10">
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-indigo-800">
               Ready to Build Something Amazing?
             </h2>
             <p className="text-xl text-muted-foreground">
