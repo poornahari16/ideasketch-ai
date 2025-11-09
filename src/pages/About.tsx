@@ -4,48 +4,32 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Target, Eye, Heart, Zap, Users, Award, ArrowRight } from "lucide-react";
-
 const About = () => {
-  const values = [
-    {
-      icon: <Zap className="w-8 h-8" />,
-      title: "Innovation First",
-      description: "We embrace cutting-edge AI technology to deliver solutions that push boundaries",
-    },
-    {
-      icon: <Users className="w-8 h-8" />,
-      title: "Client Success",
-      description: "Your success is our success. We're committed to delivering measurable results",
-    },
-    {
-      icon: <Heart className="w-8 h-8" />,
-      title: "Simplicity",
-      description: "Complex AI made simple. We believe powerful technology should be accessible to all",
-    },
-    {
-      icon: <Award className="w-8 h-8" />,
-      title: "Excellence",
-      description: "We maintain the highest standards in every project, no matter the size",
-    },
-  ];
-
-  const whyChooseUs = [
-    "Rapid deployment - from idea to production in days, not months",
-    "Cost-effective AI solutions that deliver ROI",
-    "Expert team with proven track record",
-    "24/7 support and dedicated account management",
-    "Scalable solutions that grow with your business",
-    "Transparent pricing with no hidden costs",
-  ];
-
-  return (
-    <div className="min-h-screen bg-background dark">
+  const values = [{
+    icon: <Zap className="w-8 h-8" />,
+    title: "Innovation First",
+    description: "We embrace cutting-edge AI technology to deliver solutions that push boundaries"
+  }, {
+    icon: <Users className="w-8 h-8" />,
+    title: "Client Success",
+    description: "Your success is our success. We're committed to delivering measurable results"
+  }, {
+    icon: <Heart className="w-8 h-8" />,
+    title: "Simplicity",
+    description: "Complex AI made simple. We believe powerful technology should be accessible to all"
+  }, {
+    icon: <Award className="w-8 h-8" />,
+    title: "Excellence",
+    description: "We maintain the highest standards in every project, no matter the size"
+  }];
+  const whyChooseUs = ["Rapid deployment - from idea to production in days, not months", "Cost-effective AI solutions that deliver ROI", "Expert team with proven track record", "24/7 support and dedicated account management", "Scalable solutions that grow with your business", "Transparent pricing with no hidden costs"];
+  return <div className="min-h-screen bg-background dark">
       <Navbar />
 
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">
+            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6 text-cyan-600">
               About <span className="text-primary">IdeaSketch</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -82,12 +66,11 @@ const About = () => {
 
           {/* Core Values */}
           <div className="mb-20">
-            <h2 className="text-4xl font-heading font-bold text-center mb-12">
+            <h2 className="text-4xl font-heading font-bold text-center mb-12 text-lime-500">
               Our Core <span className="text-primary">Values</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {values.map((value, index) => (
-                <Card key={index} className="glass border-2 hover:border-primary/50 transition-all">
+              {values.map((value, index) => <Card key={index} className="glass border-2 hover:border-primary/50 transition-all">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
                       <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
@@ -99,27 +82,24 @@ const About = () => {
                       </div>
                     </div>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
 
           {/* Why Choose Us */}
           <div className="mb-20">
-            <h2 className="text-4xl font-heading font-bold text-center mb-12">
+            <h2 className="text-4xl font-heading font-bold text-center mb-12 text-green-500">
               Why Choose <span className="text-primary">IdeaSketch?</span>
             </h2>
             <Card className="glass border-2">
               <CardContent className="p-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {whyChooseUs.map((reason, index) => (
-                    <div key={index} className="flex items-start space-x-3">
+                  {whyChooseUs.map((reason, index) => <div key={index} className="flex items-start space-x-3">
                       <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <div className="w-2 h-2 rounded-full bg-primary" />
                       </div>
                       <p className="text-muted-foreground">{reason}</p>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </CardContent>
             </Card>
@@ -127,40 +107,47 @@ const About = () => {
 
           {/* Our Approach */}
           <div className="mb-20">
-            <h2 className="text-4xl font-heading font-bold text-center mb-12">
+            <h2 className="text-4xl font-heading font-bold text-center mb-12 text-green-500">
               Our <span className="text-primary">Approach</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              {[
-                { step: "01", title: "Listen", desc: "We understand your unique challenges" },
-                { step: "02", title: "Design", desc: "Custom solutions tailored to your needs" },
-                { step: "03", title: "Build", desc: "Rapid development with AI-powered tools" },
-                { step: "04", title: "Support", desc: "Ongoing optimization and support" },
-              ].map((item, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-5xl font-heading font-bold text-primary/20 mb-4">
+              {[{
+              step: "01",
+              title: "Listen",
+              desc: "We understand your unique challenges"
+            }, {
+              step: "02",
+              title: "Design",
+              desc: "Custom solutions tailored to your needs"
+            }, {
+              step: "03",
+              title: "Build",
+              desc: "Rapid development with AI-powered tools"
+            }, {
+              step: "04",
+              title: "Support",
+              desc: "Ongoing optimization and support"
+            }].map((item, index) => <div key={index} className="text-center">
+                  <div className="text-5xl font-heading font-bold text-primary/20 mb-4 bg-gray-800">
                     {item.step}
                   </div>
-                  <h3 className="text-xl font-heading font-bold mb-2">{item.title}</h3>
+                  <h3 className="text-xl font-heading font-bold mb-2 text-sky-700">{item.title}</h3>
                   <p className="text-sm text-muted-foreground">{item.desc}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
 
           {/* Who We Serve */}
           <div className="mb-20">
-            <h2 className="text-4xl font-heading font-bold text-center mb-12">
+            <h2 className="text-4xl font-heading font-bold text-center mb-12 text-lime-500">
               Who We <span className="text-primary">Serve</span>
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-              {["Startups", "Small Businesses", "Enterprises", "Creators", "Agencies"].map((segment, index) => (
-                <Card key={index} className="glass border-2 hover:border-primary/50 transition-all text-center">
+              {["Startups", "Small Businesses", "Enterprises", "Creators", "Agencies"].map((segment, index) => <Card key={index} className="glass border-2 hover:border-primary/50 transition-all text-center">
                   <CardContent className="p-6">
                     <p className="font-heading font-semibold">{segment}</p>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
 
@@ -184,8 +171,6 @@ const About = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
