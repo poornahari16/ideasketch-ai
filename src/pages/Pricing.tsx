@@ -81,7 +81,7 @@ const Pricing = () => {
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">
+            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6 text-blue-700">
               Simple, <span className="text-primary text-5xl text-left">Transparent Pricing</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
